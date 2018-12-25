@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Blockly Demo: Mirrored Blockly</title>
+  <script src="blockly/blockly_compressed.js"></script>
+  <script src="blockly/blocks_compressed.js"></script>
+  <script src="blockly/msg/js/en.js"></script>
+  <script src="sampleBlocks.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+  <h1><a href="https://developers.google.com/blockly/">Blockly</a> &gt;
+    <a href="../index.html">Demos</a> &gt; Mirrored Blockly</h1>
+
+  <p>This is a simple demo of a primary Blockly instance that controls a secondary Blockly instance with events.
+  Open the JavaScript console to see the event passing.</p>
+
+  <p>&rarr; More info on <a href="https://developers.google.com/blockly/guides/configure/web/events">events</a>&hellip;</p>
+  <div id="blocklyArea">
+      <div id="primaryDiv" class="primaryWS"></div>
+  </div>
+  <div id="buttonArea">
+    <button onclick="addEventWorkspace()">REGISTER</button>
+  </div>
+  <div id="eventArea"></div>
+  <script src="Workspace.js"></script>
+  <script src="mirror.js"></script>
+</body>
+</html>
